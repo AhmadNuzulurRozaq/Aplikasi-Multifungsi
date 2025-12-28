@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools Multifungsi</title>
+</head>
+
+<body>
+  <!-- 
+  Aplikasi Tools Multifungsi
+  --------------------------
+  by : Ahmad Nuzulur Rozaq
+  
+  Fitur yang disediakan aplikasi ini antara lain :
+    1. Kalkulator Sederhana
+    2. List Barang
+    3. -x-x-x-x-x-x-
+  -->
+
+  <header>
+    <div class="sectionTitle">
+      <h1>Tools Multifungsi</h1>
+      <span>by : Ahmad Nuzulur Rozaq</span>
+    </div>
+  </header>
+  <hr>
+  <main>
+    <div class="sectionFieldset">
+      <fieldset>
+        <div class="briefDescription">
+          <strong>Deskripsi Singkat</strong>
+          <p>Aplikasi Tools Multifungsi ini merupakan aplikasi mini projek saya. Saya sedang mempelajari dasar-dasar
+            JavaScript untuk membuat website yang saya buat menjadi interaktif.<br>
+            Fitur-fitur yang disediakan antara lain untuk projek pertama saya yaitu :
+          </p>
+          <ul>
+            <li>Kalkulator Sederhana</li>
+            <li>List Barang</li>
+          </ul>
+        </div>
+
+        <div class="menuOption">
+          <strong>Pilihan Menu</strong>
+          <ul>
+            <li><button onclick="menu1()">Kalkulator Sederhana</button></li>
+            <li><button onclick="menu2()">List Barang</button></li>
+          </ul>
+        </div>
+
+        <div class="menuDetail" id="menu1Detail" style="display: none;">
+          <fieldset>
+            <h3>Kalkulator Sederhana</h3>
+            <hr>
+            <table border="0">
+              <tbody>
+                <tr>
+                  <td>Penjumlahan</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" name="" id="a1Jumlah">
+                  </td>
+                  <td>+</td>
+                  <td>
+                    <input type="number" name="" id="a2Jumlah">
+                  </td>
+                  <td>
+                    <button type="button" onclick="jumlahkan()"> = </button>
+                  </td>
+                  <td>
+                    <input type="number" id="outputPenjumlahan" disabled>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pengurangan</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" name="" id="a1Kurang">
+                  </td>
+                  <td>-</td>
+                  <td>
+                    <input type="number" name="" id="a2Kurang">
+                  </td>
+                  <td>
+                    <button type="button" onclick="kurangi()"> = </button>
+                  </td>
+                  <td>
+                    <input type="number" id="outputPengurangan" disabled>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Perkalian</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" name="" id="a1Kali">
+                  </td>
+                  <td>×</td>
+                  <td>
+                    <input type="number" name="" id="a2Kali">
+                  </td>
+                  <td>
+                    <button type="button" onclick="kalikan()"> = </button>
+                  </td>
+                  <td>
+                    <input type="number" id="outputPerkalian" disabled>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pembagian</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" name="" id="a1Bagi">
+                  </td>
+                  <td>÷</td>
+                  <td>
+                    <input type="number" name="" id="a2Bagi">
+                  </td>
+                  <td>
+                    <button type="button" onclick="bagikan()"> = </button>
+                  </td>
+                  <td>
+                    <input type="number" id="outputPembagian" disabled>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button onclick="hiddenMenu1()">Sembunyikan</button>
+            <button onclick="resetCalculator()">Reset</button>
+          </fieldset>
+        </div>
+
+        <div class="menuDetail" id="menu2Detail" style="display: none;">
+          <fieldset>
+            <h3>Aplikasi List Barang</h3>
+            <hr>
+            <div class="">
+              <span>
+                Silahkan isi list barang anda di kotak pengisian yang sudah disediakan.<br>
+                Tidak boleh di isi dengan spasi kosong dan wajib diisi.
+              </span>
+            </div>
+            <div class="">
+              <input type="text" name="" id="inputList">
+              <button onclick="tambah()">Tambah</button>
+              <button onclick="resetList()">Reset</button>
+            </div>
+            <div class="">
+              <ul id="list">
+                <li>TEST</li>
+              </ul>
+            </div>
+            <button onclick="hiddenMenu2()">Sembunyikan</button>
+          </fieldset>
+        </div>
+      </fieldset>
+    </div>
+  </main>
+
+  <script src="/Projek/Aplikasi Multifungsi/js/script.js"></script>
+
+</body>
+
+</html>
